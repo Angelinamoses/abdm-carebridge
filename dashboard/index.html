@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABDM CareBridge — Continuity Monitor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0F1720;
+    --surface:#161F2B;
+    --surface-2:#1D2836;
+    --border:#2A3646;
+    --text:#E7ECF2;
+    --muted:#8B98A5;
+    --continuous:#4FB0AE;
+    --at-risk:#E0A458;
+    --broken:#E2725B;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'IBM Plex Sans',sans-serif;
+    min-height:100vh;
+    padding:40px 24px 80px;
+  }
+  .wrap{max-width:1040px;margin:0 auto;}
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:12px;
+    border-bottom:1px solid var(--border);
+    padding-bottom:20px;
+    margin-bottom:28px;
+  }
+  h1{
+    font-family:'JetBrains Mono',monospace;
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    margin:0;
+  }
+  h1 span{color:var(--muted);font-weight:400;}
+  .status-pill{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    color:var(--muted);
+    border:1px solid var(--border);
+    border-radius:999px;
+    padding:4px 12px;
+  }
+  .status-pill.ok{color:var(--continuous);border-color:var(--continuous);}
+  .load-row{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    margin-bottom:32px;
+    flex-wrap:wrap;
+  }
+  .load-row label{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--muted);
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:8px 14px;
+    cursor:pointer;
+  }
+  .load-row label:hover{border-color:var(--continuous);color:var(--text);}
+  .load-row input[type=file]{display:none;}
+  .load-row .hint{font-size:12px;color:var(--muted);}
+
+  .stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    margin-bottom:36px;
+  }
+  .stat-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:22px 24px;
+  }
+  .stat-card .label{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--muted);
+    margin-bottom:10px;
+  }
+  .stat-card .value{
+    font-family:'JetBrains Mono',monospace;
+    font-size:40px;
+    font-weight:700;
+    line-height:1;
+  }
+  .stat-card.no-abha .value{color:var(--broken);}
+  .stat-card.abha .value{color:var(--continuous);}
+  .stat-card .sub{font-size:12px;color:var(--muted);margin-top:8px;}
+
+  .section-title{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--muted);
+    margin:0 0 14px;
+  }
+
+  .heatmap-wrap{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:20px;
+    overflow-x:auto;
+    margin-bottom:28px;
+  }
+  table{border-collapse:separate;border-spacing:4px;width:100%;}
+  th{
+    font-family:'JetBrains Mono',monospace;
+    font-size:9.5px;
+    color:var(--muted);
+    font-weight:500;
+    text-align:center;
+    padding:0 2px 8px;
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    height:80px;
+    vertical-align:bottom;
+  }
+  th.row-label-head, td.row-label{writing-mode:horizontal-tb;transform:none;text-align:left;}
+  td.row-label{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    color:var(--text);
+    white-space:nowrap;
+    padding-right:10px;
+  }
+  td.row-label .tag{
+    display:inline-block;
+    font-size:9px;
+    padding:1px 6px;
+    border-radius:4px;
+    margin-left:6px;
+    font-weight:600;
+  }
+  td.row-label .tag.abha{background:rgba(79,176,174,0.18);color:var(--continuous);}
+  td.row-label .tag.noabha{background:rgba(226,114,91,0.18);color:var(--broken);}
+  .cell{
+    width:34px;height:34px;
+    border-radius:5px;
+    cursor:default;
+    transition:transform 0.12s ease;
+  }
+  .cell:hover{transform:scale(1.15);}
+  .cell.continuous{background:var(--continuous);}
+  .cell.at-risk{background:var(--at-risk);}
+  .cell.broken{background:var(--broken);}
+
+  .legend{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    margin-bottom:36px;
+    font-size:12px;
+    color:var(--muted);
+  }
+  .legend .item{display:flex;align-items:center;gap:8px;}
+  .legend .swatch{width:12px;height:12px;border-radius:3px;}
+
+  .empty{
+    text-align:center;
+    padding:60px 20px;
+    color:var(--muted);
+    font-size:14px;
+    border:1px dashed var(--border);
+    border-radius:10px;
+  }
+  .empty code{
+    font-family:'JetBrains Mono',monospace;
+    background:var(--surface-2);
+    padding:2px 6px;
+    border-radius:4px;
+    color:var(--text);
+  }
+  footer{
+    margin-top:20px;
+    font-size:11px;
+    color:var(--muted);
+    font-family:'JetBrains Mono',monospace;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>ABDM CareBridge <span>/ continuity monitor</span></h1>
+    <span class="status-pill" id="statusPill">no data loaded</span>
+  </header>
+
+  <div class="load-row">
+    <label for="fileInput">Load journey_simulation_results.json</label>
+    <input type="file" id="fileInput" accept=".json">
+    <span class="hint">or run with a local server so the page auto-loads ../data/synthetic/journey_simulation_results.json</span>
+  </div>
+
+  <div id="content">
+    <div class="empty">
+      No simulation data loaded yet.<br><br>
+      Run <code>python src/simulation/journey_simulator.py</code>, then either load the resulting JSON file above, or serve this folder locally (<code>python -m http.server</code>) so it loads automatically.
+    </div>
+  </div>
+
+  <footer>Synthetic data only. Generated by src/simulation/journey_simulator.py — not connected to any live ABDM system.</footer>
+</div>
+
+<script>
+const STAGE_LABELS = {
+  home_state_baseline: "Home baseline",
+  migration: "Migration",
+  destination_registration: "Registration",
+  abha_usage: "ABHA usage",
+  clinical_consultation: "Consultation",
+  laboratory: "Laboratory",
+  pharmacy: "Pharmacy",
+  referral: "Referral",
+  discharge_and_return: "Discharge/return"
+};
+
+const TIER = {
+  generated: "continuous", linked: "continuous", available: "continuous", recorded: "continuous",
+  at_risk: "at-risk",
+  lost: "broken", isolated: "broken", duplicated: "broken"
+};
+
+function render(results){
+  document.getElementById('statusPill').textContent = results.length + ' synthetic journeys loaded';
+  document.getElementById('statusPill').classList.add('ok');
+
+  const withAbha = results.filter(r => r.abha_available);
+  const withoutAbha = results.filter(r => !r.abha_available);
+  const avg = arr => arr.length ? (arr.reduce((s,r)=>s+r.continuity_breaks,0)/arr.length).toFixed(2) : '—';
+
+  const stages = Object.keys(STAGE_LABELS);
+  const sorted = [...results].sort((a,b) => (a.abha_available === b.abha_available) ? 0 : a.abha_available ? -1 : 1);
+
+  let rows = sorted.map(r => {
+    const cells = r.journey_log.map(entry => {
+      const tier = TIER[entry.data_status] || 'at-risk';
+      const title = `${STAGE_LABELS[entry.stage] || entry.stage}: ${entry.data_status} — ${entry.note}`;
+      return `<td><div class="cell ${tier}" title="${title.replace(/"/g,'&quot;')}"></div></td>`;
+    }).join('');
+    const tag = r.abha_available
+      ? '<span class="tag abha">ABHA</span>'
+      : '<span class="tag noabha">NO ABHA</span>';
+    return `<tr><td class="row-label">${r.patient_id.slice(0,8)}${tag}</td>${cells}</tr>`;
+  }).join('');
+
+  const headerCells = stages.map(s => `<th>${STAGE_LABELS[s]}</th>`).join('');
+
+  document.getElementById('content').innerHTML = `
+    <div class="stats">
+      <div class="stat-card abha">
+        <div class="label">Avg. continuity breaks — ABHA available</div>
+        <div class="value">${avg(withAbha)}</div>
+        <div class="sub">${withAbha.length} synthetic journeys</div>
+      </div>
+      <div class="stat-card no-abha">
+        <div class="label">Avg. continuity breaks — ABHA unavailable</div>
+        <div class="value">${avg(withoutAbha)}</div>
+        <div class="sub">${withoutAbha.length} synthetic journeys</div>
+      </div>
+    </div>
+
+    <p class="section-title">Continuity heatmap — 9-stage journey per synthetic patient</p>
+    <div class="heatmap-wrap">
+      <table>
+        <thead><tr><th class="row-label-head">Patient</th>${headerCells}</tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+
+    <div class="legend">
+      <div class="item"><div class="swatch" style="background:var(--continuous)"></div>Continuous — record linked or available</div>
+      <div class="item"><div class="swatch" style="background:var(--at-risk)"></div>At risk — transfer not guaranteed</div>
+      <div class="item"><div class="swatch" style="background:var(--broken)"></div>Broken — lost, isolated, or duplicated</div>
+    </div>
+  `;
+}
+
+document.getElementById('fileInput').addEventListener('change', e => {
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = evt => {
+    try{
+      render(JSON.parse(evt.target.result));
+    }catch(err){
+      alert('Could not parse this file as JSON: ' + err.message);
+    }
+  };
+  reader.readAsText(file);
+});
+
+// auto-load attempt when served over http(s), silently ignored if blocked (e.g. opened via file://)
+fetch('../data/synthetic/journey_simulation_results.json')
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(render)
+  .catch(() => {});
+</script>
+</body>
+</html>
