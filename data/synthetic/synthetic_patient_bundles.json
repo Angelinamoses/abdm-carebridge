@@ -1,0 +1,657 @@
+[
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "60ee5286-eca0-4c44-8c13-e6835d34c153",
+      "identifier": [],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker 60ee52"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "Uttar Pradesh"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Ernakulam"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "34b582c4-c85a-4097-97c9-33cb7ae47895",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/60ee5286-eca0-4c44-8c13-e6835d34c153"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "514abfc9-a88d-4090-b400-e019bcc2096f",
+      "subject": {
+        "reference": "Patient/60ee5286-eca0-4c44-8c13-e6835d34c153"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "E11",
+            "display": "Type 2 diabetes mellitus"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  },
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "6629ba72-0323-4443-8d18-6642eb93d00b",
+      "identifier": [
+        {
+          "system": "https://healthid.ndhm.gov.in",
+          "value": "SYNTH-ABHA-6629ba72"
+        }
+      ],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker 6629ba"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "Bihar"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Kollam"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "2812f67c-cb62-43b5-a212-67963f58aa1f",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/6629ba72-0323-4443-8d18-6642eb93d00b"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "c547af3b-9863-4d9d-bcc1-459ec7eac805",
+      "subject": {
+        "reference": "Patient/6629ba72-0323-4443-8d18-6642eb93d00b"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "S93",
+            "display": "Ankle sprain"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  },
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "7bd371d9-561f-4fa1-a282-45a4826038a9",
+      "identifier": [
+        {
+          "system": "https://healthid.ndhm.gov.in",
+          "value": "SYNTH-ABHA-7bd371d9"
+        }
+      ],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker 7bd371"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "Bihar"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Kollam"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "72c9c6fc-2a62-42fa-a869-4f3b25ad814f",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/7bd371d9-561f-4fa1-a282-45a4826038a9"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "54f1fb23-a737-4329-bafd-4dde1c3ecb33",
+      "subject": {
+        "reference": "Patient/7bd371d9-561f-4fa1-a282-45a4826038a9"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "E11",
+            "display": "Type 2 diabetes mellitus"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  },
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "5dee89da-65bd-432c-9d64-3e6fc44993a6",
+      "identifier": [
+        {
+          "system": "https://healthid.ndhm.gov.in",
+          "value": "SYNTH-ABHA-5dee89da"
+        }
+      ],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker 5dee89"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "Uttar Pradesh"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Thiruvananthapuram"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "6afbc23f-122b-421c-b3b4-29e07f9247c6",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/5dee89da-65bd-432c-9d64-3e6fc44993a6"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "f82fb19e-26ec-4283-8a42-3ad186350294",
+      "subject": {
+        "reference": "Patient/5dee89da-65bd-432c-9d64-3e6fc44993a6"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "J45",
+            "display": "Asthma"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  },
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "ef8371e5-d465-4982-a4f1-615efb3e18ae",
+      "identifier": [
+        {
+          "system": "https://healthid.ndhm.gov.in",
+          "value": "SYNTH-ABHA-ef8371e5"
+        }
+      ],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker ef8371"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "Odisha"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Ernakulam"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "cd1f9caf-45c0-45b4-a47a-5f5cb2d24346",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/ef8371e5-d465-4982-a4f1-615efb3e18ae"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "5914ff3c-081a-4931-b2cb-af6e300843ee",
+      "subject": {
+        "reference": "Patient/ef8371e5-d465-4982-a4f1-615efb3e18ae"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "L01",
+            "display": "Skin infection"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  },
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "65389726-ab56-4f38-b2a0-411314096a1c",
+      "identifier": [
+        {
+          "system": "https://healthid.ndhm.gov.in",
+          "value": "SYNTH-ABHA-65389726"
+        }
+      ],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker 653897"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "Assam"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Kollam"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "f42952a0-383a-4411-895a-1984ff1edfce",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/65389726-ab56-4f38-b2a0-411314096a1c"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "efed8199-e84e-4e64-9dad-41e5350291ff",
+      "subject": {
+        "reference": "Patient/65389726-ab56-4f38-b2a0-411314096a1c"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "L01",
+            "display": "Skin infection"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  },
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "d87bccd4-1064-4987-933c-7cba75cee0d4",
+      "identifier": [
+        {
+          "system": "https://healthid.ndhm.gov.in",
+          "value": "SYNTH-ABHA-d87bccd4"
+        }
+      ],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker d87bcc"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "Uttar Pradesh"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Kollam"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "10a37303-c329-4426-a056-ac888c094192",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/d87bccd4-1064-4987-933c-7cba75cee0d4"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "03b6742e-dce9-4e15-9339-73193753b18f",
+      "subject": {
+        "reference": "Patient/d87bccd4-1064-4987-933c-7cba75cee0d4"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "J45",
+            "display": "Asthma"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  },
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "be9bd10c-bca4-4983-a042-69d6b4da7f4e",
+      "identifier": [
+        {
+          "system": "https://healthid.ndhm.gov.in",
+          "value": "SYNTH-ABHA-be9bd10c"
+        }
+      ],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker be9bd1"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "Bihar"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Ernakulam"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "60a0c414-e51e-4b73-adec-9bae554a0f91",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/be9bd10c-bca4-4983-a042-69d6b4da7f4e"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "4de65067-457b-42d8-82a5-b0d98070abc6",
+      "subject": {
+        "reference": "Patient/be9bd10c-bca4-4983-a042-69d6b4da7f4e"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "S93",
+            "display": "Ankle sprain"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  },
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "aa054148-9cbb-4f3b-aa32-1e33770a0d68",
+      "identifier": [],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker aa0541"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "West Bengal"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Kollam"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "46c104ae-b8c1-4e73-89e4-1613243220aa",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/aa054148-9cbb-4f3b-aa32-1e33770a0d68"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "2699e6c3-96da-492b-9690-61c486d630ce",
+      "subject": {
+        "reference": "Patient/aa054148-9cbb-4f3b-aa32-1e33770a0d68"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "L01",
+            "display": "Skin infection"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  },
+  {
+    "patient": {
+      "resourceType": "Patient",
+      "id": "547d53dd-052e-41b8-bd97-a2ce85efbc4d",
+      "identifier": [],
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real patient"
+      },
+      "name": [
+        {
+          "text": "Synthetic Worker 547d53"
+        }
+      ],
+      "extension": [
+        {
+          "url": "homeState",
+          "valueString": "Bihar"
+        },
+        {
+          "url": "destinationDistrict",
+          "valueString": "Ernakulam"
+        },
+        {
+          "url": "abhaAvailable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    "encounter": {
+      "resourceType": "Encounter",
+      "id": "9163c682-39ae-4ec7-a070-47d6dcd517b6",
+      "status": "finished",
+      "subject": {
+        "reference": "Patient/547d53dd-052e-41b8-bd97-a2ce85efbc4d"
+      },
+      "class": {
+        "code": "ambulatory"
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real encounter"
+      }
+    },
+    "condition": {
+      "resourceType": "Condition",
+      "id": "459a80ad-1ad8-4028-8ba7-787da0c0ec80",
+      "subject": {
+        "reference": "Patient/547d53dd-052e-41b8-bd97-a2ce85efbc4d"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "L01",
+            "display": "Skin infection"
+          }
+        ]
+      },
+      "meta": {
+        "note": "SYNTHETIC DATA -- not a real diagnosis"
+      }
+    }
+  }
+]

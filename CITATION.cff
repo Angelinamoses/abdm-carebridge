@@ -3,11 +3,11 @@ message: "If you use or reference this work, please cite it as below."
 title: "ABDM CareBridge: A Systems Analysis of Continuity-of-Care Barriers for Kerala's Interstate Informal Migrant Workforce"
 type: software
 authors:
-  - family-names: "[Your last name]"
-    given-names: "[Your first name]"
+  - family-names: "Darla"
+    given-names: "Angel"
     affiliation: "M.Sc. Health Informatics and Analytics"
 date-released: 2026-08-01
-url: "https://github.com/[your-username]/abdm-carebridge"
+url: "https://github.com/Angelinamoses/abdm-carebridge"
 license: MIT
 keywords:
   - digital health
