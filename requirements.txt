@@ -1,0 +1,9 @@
+# Core
+python-dateutil>=2.8
+
+# Uncomment as later modules are built:
+# fhir.resources>=7.0      # for validated FHIR resource modeling
+# pandas>=2.0               # for evaluation/metrics
+# streamlit>=1.30           # for dashboard
+# recordlinkage>=0.16       # for probabilistic linkage module
+# pytest>=7.0                # for tests
