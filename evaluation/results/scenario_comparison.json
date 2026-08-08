@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "scenario": "baseline_abha_only",
+    "n_patients": 10,
+    "n_with_abha": 5,
+    "n_without_abha": 5,
+    "avg_breaks_with_abha": 3.0,
+    "avg_breaks_without_abha": 7.0,
+    "avg_breaks_overall": 5.0
+  },
+  "hybrid": {
+    "scenario": "hybrid_with_pprl_fallback",
+    "n_patients": 10,
+    "n_with_abha": 5,
+    "n_without_abha": 5,
+    "avg_breaks_with_abha": 3.0,
+    "avg_breaks_without_abha": 3.6,
+    "avg_breaks_overall": 3.3
+  },
+  "total_breaks_recovered_by_fallback": 17,
+  "note": "Synthetic data, illustrative recovery_rate=0.5. This demonstrates the mechanism of the proposed architecture, not a validated empirical effect size. See docs/limitations.md."
+}

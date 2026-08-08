@@ -1,58 +1,6 @@
 [
   {
-    "patient_id": "60ee5286-eca0-4c44-8c13-e6835d34c153",
-    "abha_available": false,
-    "journey_log": [
-      {
-        "stage": "home_state_baseline",
-        "data_status": "generated",
-        "note": "baseline record created in home state, if any"
-      },
-      {
-        "stage": "migration",
-        "data_status": "at_risk",
-        "note": "no automatic record transfer across state lines"
-      },
-      {
-        "stage": "destination_registration",
-        "data_status": "duplicated",
-        "note": "new local record created, not linked to prior history"
-      },
-      {
-        "stage": "abha_usage",
-        "data_status": "lost",
-        "note": "no ABHA -- continuity depends entirely on fallback pathway"
-      },
-      {
-        "stage": "clinical_consultation",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "laboratory",
-        "data_status": "isolated",
-        "note": "recorded locally, not connected to longitudinal record"
-      },
-      {
-        "stage": "pharmacy",
-        "data_status": "isolated",
-        "note": "recorded locally, not connected to longitudinal record"
-      },
-      {
-        "stage": "referral",
-        "data_status": "at_risk",
-        "note": "referral summary transfer not guaranteed cross-facility"
-      },
-      {
-        "stage": "discharge_and_return",
-        "data_status": "at_risk",
-        "note": "no guaranteed mechanism to sync destination-state record back to home state"
-      }
-    ],
-    "continuity_breaks": 7
-  },
-  {
-    "patient_id": "6629ba72-0323-4443-8d18-6642eb93d00b",
+    "patient_id": "5bb3b9eb-bb77-4a83-bb29-03a0f01696f2",
     "abha_available": true,
     "journey_log": [
       {
@@ -104,7 +52,7 @@
     "continuity_breaks": 3
   },
   {
-    "patient_id": "7bd371d9-561f-4fa1-a282-45a4826038a9",
+    "patient_id": "aa1f7fd3-44d4-4501-9df4-d02ad1834585",
     "abha_available": true,
     "journey_log": [
       {
@@ -156,319 +104,7 @@
     "continuity_breaks": 3
   },
   {
-    "patient_id": "5dee89da-65bd-432c-9d64-3e6fc44993a6",
-    "abha_available": true,
-    "journey_log": [
-      {
-        "stage": "home_state_baseline",
-        "data_status": "generated",
-        "note": "baseline record created in home state, if any"
-      },
-      {
-        "stage": "migration",
-        "data_status": "at_risk",
-        "note": "no automatic record transfer across state lines"
-      },
-      {
-        "stage": "destination_registration",
-        "data_status": "linked",
-        "note": "registration linked via ABHA"
-      },
-      {
-        "stage": "abha_usage",
-        "data_status": "available",
-        "note": "ABHA successfully used for record pull"
-      },
-      {
-        "stage": "clinical_consultation",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "laboratory",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "pharmacy",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "referral",
-        "data_status": "at_risk",
-        "note": "referral summary transfer not guaranteed cross-facility"
-      },
-      {
-        "stage": "discharge_and_return",
-        "data_status": "at_risk",
-        "note": "no guaranteed mechanism to sync destination-state record back to home state"
-      }
-    ],
-    "continuity_breaks": 3
-  },
-  {
-    "patient_id": "ef8371e5-d465-4982-a4f1-615efb3e18ae",
-    "abha_available": true,
-    "journey_log": [
-      {
-        "stage": "home_state_baseline",
-        "data_status": "generated",
-        "note": "baseline record created in home state, if any"
-      },
-      {
-        "stage": "migration",
-        "data_status": "at_risk",
-        "note": "no automatic record transfer across state lines"
-      },
-      {
-        "stage": "destination_registration",
-        "data_status": "linked",
-        "note": "registration linked via ABHA"
-      },
-      {
-        "stage": "abha_usage",
-        "data_status": "available",
-        "note": "ABHA successfully used for record pull"
-      },
-      {
-        "stage": "clinical_consultation",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "laboratory",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "pharmacy",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "referral",
-        "data_status": "at_risk",
-        "note": "referral summary transfer not guaranteed cross-facility"
-      },
-      {
-        "stage": "discharge_and_return",
-        "data_status": "at_risk",
-        "note": "no guaranteed mechanism to sync destination-state record back to home state"
-      }
-    ],
-    "continuity_breaks": 3
-  },
-  {
-    "patient_id": "65389726-ab56-4f38-b2a0-411314096a1c",
-    "abha_available": true,
-    "journey_log": [
-      {
-        "stage": "home_state_baseline",
-        "data_status": "generated",
-        "note": "baseline record created in home state, if any"
-      },
-      {
-        "stage": "migration",
-        "data_status": "at_risk",
-        "note": "no automatic record transfer across state lines"
-      },
-      {
-        "stage": "destination_registration",
-        "data_status": "linked",
-        "note": "registration linked via ABHA"
-      },
-      {
-        "stage": "abha_usage",
-        "data_status": "available",
-        "note": "ABHA successfully used for record pull"
-      },
-      {
-        "stage": "clinical_consultation",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "laboratory",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "pharmacy",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "referral",
-        "data_status": "at_risk",
-        "note": "referral summary transfer not guaranteed cross-facility"
-      },
-      {
-        "stage": "discharge_and_return",
-        "data_status": "at_risk",
-        "note": "no guaranteed mechanism to sync destination-state record back to home state"
-      }
-    ],
-    "continuity_breaks": 3
-  },
-  {
-    "patient_id": "d87bccd4-1064-4987-933c-7cba75cee0d4",
-    "abha_available": true,
-    "journey_log": [
-      {
-        "stage": "home_state_baseline",
-        "data_status": "generated",
-        "note": "baseline record created in home state, if any"
-      },
-      {
-        "stage": "migration",
-        "data_status": "at_risk",
-        "note": "no automatic record transfer across state lines"
-      },
-      {
-        "stage": "destination_registration",
-        "data_status": "linked",
-        "note": "registration linked via ABHA"
-      },
-      {
-        "stage": "abha_usage",
-        "data_status": "available",
-        "note": "ABHA successfully used for record pull"
-      },
-      {
-        "stage": "clinical_consultation",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "laboratory",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "pharmacy",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "referral",
-        "data_status": "at_risk",
-        "note": "referral summary transfer not guaranteed cross-facility"
-      },
-      {
-        "stage": "discharge_and_return",
-        "data_status": "at_risk",
-        "note": "no guaranteed mechanism to sync destination-state record back to home state"
-      }
-    ],
-    "continuity_breaks": 3
-  },
-  {
-    "patient_id": "be9bd10c-bca4-4983-a042-69d6b4da7f4e",
-    "abha_available": true,
-    "journey_log": [
-      {
-        "stage": "home_state_baseline",
-        "data_status": "generated",
-        "note": "baseline record created in home state, if any"
-      },
-      {
-        "stage": "migration",
-        "data_status": "at_risk",
-        "note": "no automatic record transfer across state lines"
-      },
-      {
-        "stage": "destination_registration",
-        "data_status": "linked",
-        "note": "registration linked via ABHA"
-      },
-      {
-        "stage": "abha_usage",
-        "data_status": "available",
-        "note": "ABHA successfully used for record pull"
-      },
-      {
-        "stage": "clinical_consultation",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "laboratory",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "pharmacy",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "referral",
-        "data_status": "at_risk",
-        "note": "referral summary transfer not guaranteed cross-facility"
-      },
-      {
-        "stage": "discharge_and_return",
-        "data_status": "at_risk",
-        "note": "no guaranteed mechanism to sync destination-state record back to home state"
-      }
-    ],
-    "continuity_breaks": 3
-  },
-  {
-    "patient_id": "aa054148-9cbb-4f3b-aa32-1e33770a0d68",
-    "abha_available": false,
-    "journey_log": [
-      {
-        "stage": "home_state_baseline",
-        "data_status": "generated",
-        "note": "baseline record created in home state, if any"
-      },
-      {
-        "stage": "migration",
-        "data_status": "at_risk",
-        "note": "no automatic record transfer across state lines"
-      },
-      {
-        "stage": "destination_registration",
-        "data_status": "duplicated",
-        "note": "new local record created, not linked to prior history"
-      },
-      {
-        "stage": "abha_usage",
-        "data_status": "lost",
-        "note": "no ABHA -- continuity depends entirely on fallback pathway"
-      },
-      {
-        "stage": "clinical_consultation",
-        "data_status": "isolated",
-        "note": "recorded locally, not connected to longitudinal record"
-      },
-      {
-        "stage": "laboratory",
-        "data_status": "isolated",
-        "note": "recorded locally, not connected to longitudinal record"
-      },
-      {
-        "stage": "pharmacy",
-        "data_status": "recorded",
-        "note": "data captured, linkage depends on earlier stages"
-      },
-      {
-        "stage": "referral",
-        "data_status": "at_risk",
-        "note": "referral summary transfer not guaranteed cross-facility"
-      },
-      {
-        "stage": "discharge_and_return",
-        "data_status": "at_risk",
-        "note": "no guaranteed mechanism to sync destination-state record back to home state"
-      }
-    ],
-    "continuity_breaks": 7
-  },
-  {
-    "patient_id": "547d53dd-052e-41b8-bd97-a2ce85efbc4d",
+    "patient_id": "5ab26384-404e-4805-a11b-4bdf48e2b1ea",
     "abha_available": false,
     "journey_log": [
       {
@@ -518,5 +154,369 @@
       }
     ],
     "continuity_breaks": 8
+  },
+  {
+    "patient_id": "7ab49ac7-8032-4fad-8efa-e23cdf7ec700",
+    "abha_available": false,
+    "journey_log": [
+      {
+        "stage": "home_state_baseline",
+        "data_status": "generated",
+        "note": "baseline record created in home state, if any"
+      },
+      {
+        "stage": "migration",
+        "data_status": "at_risk",
+        "note": "no automatic record transfer across state lines"
+      },
+      {
+        "stage": "destination_registration",
+        "data_status": "duplicated",
+        "note": "new local record created, not linked to prior history"
+      },
+      {
+        "stage": "abha_usage",
+        "data_status": "lost",
+        "note": "no ABHA -- continuity depends entirely on fallback pathway"
+      },
+      {
+        "stage": "clinical_consultation",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "laboratory",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "pharmacy",
+        "data_status": "isolated",
+        "note": "recorded locally, not connected to longitudinal record"
+      },
+      {
+        "stage": "referral",
+        "data_status": "at_risk",
+        "note": "referral summary transfer not guaranteed cross-facility"
+      },
+      {
+        "stage": "discharge_and_return",
+        "data_status": "at_risk",
+        "note": "no guaranteed mechanism to sync destination-state record back to home state"
+      }
+    ],
+    "continuity_breaks": 6
+  },
+  {
+    "patient_id": "2dfe4c72-e50d-4934-b687-07adc8add4d0",
+    "abha_available": true,
+    "journey_log": [
+      {
+        "stage": "home_state_baseline",
+        "data_status": "generated",
+        "note": "baseline record created in home state, if any"
+      },
+      {
+        "stage": "migration",
+        "data_status": "at_risk",
+        "note": "no automatic record transfer across state lines"
+      },
+      {
+        "stage": "destination_registration",
+        "data_status": "linked",
+        "note": "registration linked via ABHA"
+      },
+      {
+        "stage": "abha_usage",
+        "data_status": "available",
+        "note": "ABHA successfully used for record pull"
+      },
+      {
+        "stage": "clinical_consultation",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "laboratory",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "pharmacy",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "referral",
+        "data_status": "at_risk",
+        "note": "referral summary transfer not guaranteed cross-facility"
+      },
+      {
+        "stage": "discharge_and_return",
+        "data_status": "at_risk",
+        "note": "no guaranteed mechanism to sync destination-state record back to home state"
+      }
+    ],
+    "continuity_breaks": 3
+  },
+  {
+    "patient_id": "27e42383-c750-44e8-a10e-7b34a330f7ad",
+    "abha_available": true,
+    "journey_log": [
+      {
+        "stage": "home_state_baseline",
+        "data_status": "generated",
+        "note": "baseline record created in home state, if any"
+      },
+      {
+        "stage": "migration",
+        "data_status": "at_risk",
+        "note": "no automatic record transfer across state lines"
+      },
+      {
+        "stage": "destination_registration",
+        "data_status": "linked",
+        "note": "registration linked via ABHA"
+      },
+      {
+        "stage": "abha_usage",
+        "data_status": "available",
+        "note": "ABHA successfully used for record pull"
+      },
+      {
+        "stage": "clinical_consultation",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "laboratory",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "pharmacy",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "referral",
+        "data_status": "at_risk",
+        "note": "referral summary transfer not guaranteed cross-facility"
+      },
+      {
+        "stage": "discharge_and_return",
+        "data_status": "at_risk",
+        "note": "no guaranteed mechanism to sync destination-state record back to home state"
+      }
+    ],
+    "continuity_breaks": 3
+  },
+  {
+    "patient_id": "f55dc720-b4e0-4a35-abe0-a06eda8d5453",
+    "abha_available": true,
+    "journey_log": [
+      {
+        "stage": "home_state_baseline",
+        "data_status": "generated",
+        "note": "baseline record created in home state, if any"
+      },
+      {
+        "stage": "migration",
+        "data_status": "at_risk",
+        "note": "no automatic record transfer across state lines"
+      },
+      {
+        "stage": "destination_registration",
+        "data_status": "linked",
+        "note": "registration linked via ABHA"
+      },
+      {
+        "stage": "abha_usage",
+        "data_status": "available",
+        "note": "ABHA successfully used for record pull"
+      },
+      {
+        "stage": "clinical_consultation",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "laboratory",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "pharmacy",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "referral",
+        "data_status": "at_risk",
+        "note": "referral summary transfer not guaranteed cross-facility"
+      },
+      {
+        "stage": "discharge_and_return",
+        "data_status": "at_risk",
+        "note": "no guaranteed mechanism to sync destination-state record back to home state"
+      }
+    ],
+    "continuity_breaks": 3
+  },
+  {
+    "patient_id": "0fcb59ac-3889-4df2-b111-0110a876c396",
+    "abha_available": false,
+    "journey_log": [
+      {
+        "stage": "home_state_baseline",
+        "data_status": "generated",
+        "note": "baseline record created in home state, if any"
+      },
+      {
+        "stage": "migration",
+        "data_status": "at_risk",
+        "note": "no automatic record transfer across state lines"
+      },
+      {
+        "stage": "destination_registration",
+        "data_status": "duplicated",
+        "note": "new local record created, not linked to prior history"
+      },
+      {
+        "stage": "abha_usage",
+        "data_status": "lost",
+        "note": "no ABHA -- continuity depends entirely on fallback pathway"
+      },
+      {
+        "stage": "clinical_consultation",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "laboratory",
+        "data_status": "isolated",
+        "note": "recorded locally, not connected to longitudinal record"
+      },
+      {
+        "stage": "pharmacy",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "referral",
+        "data_status": "at_risk",
+        "note": "referral summary transfer not guaranteed cross-facility"
+      },
+      {
+        "stage": "discharge_and_return",
+        "data_status": "at_risk",
+        "note": "no guaranteed mechanism to sync destination-state record back to home state"
+      }
+    ],
+    "continuity_breaks": 6
+  },
+  {
+    "patient_id": "7c7dd8c4-20ac-454c-a40b-6f410a554c8f",
+    "abha_available": false,
+    "journey_log": [
+      {
+        "stage": "home_state_baseline",
+        "data_status": "generated",
+        "note": "baseline record created in home state, if any"
+      },
+      {
+        "stage": "migration",
+        "data_status": "at_risk",
+        "note": "no automatic record transfer across state lines"
+      },
+      {
+        "stage": "destination_registration",
+        "data_status": "duplicated",
+        "note": "new local record created, not linked to prior history"
+      },
+      {
+        "stage": "abha_usage",
+        "data_status": "lost",
+        "note": "no ABHA -- continuity depends entirely on fallback pathway"
+      },
+      {
+        "stage": "clinical_consultation",
+        "data_status": "isolated",
+        "note": "recorded locally, not connected to longitudinal record"
+      },
+      {
+        "stage": "laboratory",
+        "data_status": "isolated",
+        "note": "recorded locally, not connected to longitudinal record"
+      },
+      {
+        "stage": "pharmacy",
+        "data_status": "isolated",
+        "note": "recorded locally, not connected to longitudinal record"
+      },
+      {
+        "stage": "referral",
+        "data_status": "at_risk",
+        "note": "referral summary transfer not guaranteed cross-facility"
+      },
+      {
+        "stage": "discharge_and_return",
+        "data_status": "at_risk",
+        "note": "no guaranteed mechanism to sync destination-state record back to home state"
+      }
+    ],
+    "continuity_breaks": 8
+  },
+  {
+    "patient_id": "ba65523c-d235-402f-9a6f-db1212858cb1",
+    "abha_available": false,
+    "journey_log": [
+      {
+        "stage": "home_state_baseline",
+        "data_status": "generated",
+        "note": "baseline record created in home state, if any"
+      },
+      {
+        "stage": "migration",
+        "data_status": "at_risk",
+        "note": "no automatic record transfer across state lines"
+      },
+      {
+        "stage": "destination_registration",
+        "data_status": "duplicated",
+        "note": "new local record created, not linked to prior history"
+      },
+      {
+        "stage": "abha_usage",
+        "data_status": "lost",
+        "note": "no ABHA -- continuity depends entirely on fallback pathway"
+      },
+      {
+        "stage": "clinical_consultation",
+        "data_status": "isolated",
+        "note": "recorded locally, not connected to longitudinal record"
+      },
+      {
+        "stage": "laboratory",
+        "data_status": "isolated",
+        "note": "recorded locally, not connected to longitudinal record"
+      },
+      {
+        "stage": "pharmacy",
+        "data_status": "recorded",
+        "note": "data captured, linkage depends on earlier stages"
+      },
+      {
+        "stage": "referral",
+        "data_status": "at_risk",
+        "note": "referral summary transfer not guaranteed cross-facility"
+      },
+      {
+        "stage": "discharge_and_return",
+        "data_status": "at_risk",
+        "note": "no guaranteed mechanism to sync destination-state record back to home state"
+      }
+    ],
+    "continuity_breaks": 7
   }
 ]
